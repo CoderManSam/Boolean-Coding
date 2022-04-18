@@ -1,0 +1,246 @@
+* {
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Header */
+.header {
+  display: grid;
+  grid-template-columns: 250px 1fr 400px;
+  grid-template-areas: "samuel-thomas . page-links";
+  grid-gap: 10px;
+  background-color: royalblue;
+  color: white;
+  border-top: 8px solid black;
+  place-items: center;
+}
+
+.samuel-thomas {
+  grid-area: samuel-thomas;
+}
+
+.page-links {
+  grid-area: page-links;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: royalblue;
+}
+
+.About-Me-Button {
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 8px;
+  place-items: center;
+  padding: 4px;
+  margin-right: 15px;
+  text-align: center;
+}
+
+.Portfolio-Button {
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 8px;
+  place-items: center;
+  padding: 4px;
+  margin-right: 15px;
+  text-align: center;
+}
+
+.Experience-Button {
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 8px;
+  place-items: center;
+  padding: 4px;
+  margin-right: 15px;
+  text-align: center;
+}
+
+/* Main 1 */
+.main1 {
+  background-color: royalblue;
+  color: white;
+  display: grid;
+  grid-template:
+    ". . ." 100px
+    ". main1-center-top ." 175px
+    ". main1-center-below ." 175px
+    ". . ." 100px /
+    250px 1fr 250px;
+  place-items: justify;
+}
+
+.main1 h1 {
+  font-size: 3.5rem;
+  grid-area: main1-center-top;
+}
+
+.main1-text {
+  grid-area: main1-center-below;
+  padding-top: 30px;
+}
+
+.black {
+  color: black;
+}
+
+.i-u {
+  text-decoration: underline black;
+  font-style: italic;
+  color: springgreen;
+}
+
+.springgreen {
+  color: springgreen;
+  text-decoration: underline black;
+}
+
+/* main 2 */
+.main2 {
+  display: grid;
+  grid-template:
+    ". About-Me ." 50px
+    ". Introduction ." 150px
+    ". Technical-Skills ." 200px /
+    250px 1fr 250px;
+  place-items: justify;
+  border-top: 8px solid black;
+}
+
+.About-Me {
+  grid-area: About-Me;
+  text-align: center;
+}
+
+.Introduction {
+  grid-area: Introduction;
+  display: grid;
+  grid-template:
+    "Introduction-Header" 50px
+    "Introduction-Text" 100px/
+    1fr;
+}
+
+.Introduction-Header {
+  grid-area: Introduction-Header;
+}
+
+.Introduction-Text {
+  grid-area: Introduction-Text;
+}
+
+.Technical-Skills {
+  grid-area: Technical-Skills;
+  display: grid;
+  grid-template:
+    "Technical-Skills-Header Technical-Skills-Header" 50px
+    "Technical-Skills-List1 Technical-Skills-List2" 100px /
+    1fr 1fr;
+}
+
+.Technical-Skills-Header {
+  grid-area: Technical-Skills-Header;
+}
+
+.Technical-Skills-List1 {
+  grid-area: Technical-Skills-List1;
+}
+
+.Technical-Skills-List2 {
+  grid-area: Technical-Skills-List2;
+}
+
+/* Main 3 */
+.main3 {
+  display: grid;
+  grid-template:
+    "Portfolio Portfolio Portfolio Portfolio Portfolio" 50px
+    ". Portfolio1 Portfolio2 Portfolio3 ." 400px /
+    50px 1fr 1fr 1fr 50px;
+  place-items: justify;
+  border-top: 8px solid black;
+  background-color: lavender;
+  padding-bottom: 25px;
+}
+
+.Portfolio {
+  grid-area: Portfolio;
+  text-align: center;
+}
+
+.Portfolio1 {
+  grid-area: Portfolio1;
+  background-color: white;
+  border: 8px solid purple;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px;
+}
+
+.Portfolio2 {
+  grid-area: Portfolio2;
+  background-color: white;
+  border: 8px solid purple;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px;
+}
+
+.Portfolio3 {
+  grid-area: Portfolio3;
+  background-color: white;
+  border: 8px solid purple;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px;
+}
+
+.READ-MORE {
+  border: 1px solid purple;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  background-color: purple;
+  padding: 5px;
+}
+
+.GitHub-Repo {
+  color: purple;
+  text-decoration: underline purple;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+/* main 4 */
+.main4 {
+  display: grid;
+  grid-template:
+    ". Experience ." 50px
+    ". Job-Title-Section1 ." 165px
+    ". Job-Title-Section2 ." 165px /
+    250px 1fr 250px;
+  place-items: justify;
+  border-top: 8px solid black;
+  padding-bottom: 35px;
+}
+
+.Experience {
+  grid-area: Experience;
+  text-align: center;
+}
+
+.Job-Title-Section1 {
+  grid-area: Job-Title-Section1;
+}
+
+.Job-Title-Section2 {
+  grid-area: Job-Title-Section2;
+}
+
+/* footer */
+.footer {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  background-color: black;
+}
